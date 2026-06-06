@@ -47,30 +47,3 @@ with open("Info.json", "w") as f:
 
 
 
-'''
-while True:
-        try:
-            user_id = int(input("Please enter the user id: "))
-        except ValueError:
-            print("Invalid User ID ")
-            continue
-        break
-
-url = "https://jsonplaceholder.typicode.com/users/"
-r = requests.get(url+str(user_id))
-
-while True:
-    if r.status_code ==200:
-        data = r.json()
-        break
-    else:
-        print("Invalid User ID1")
-        while True:
-            try:
-                user_id = int(input("Please enter the user id: "))
-                break
-            except ValueError:
-                print("Invalid User ID ")
-                continue    
-'''
-
