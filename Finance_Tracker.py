@@ -1,4 +1,6 @@
 import datetime
+import pandas as pd
+import matplotlib.pyplot as plt
 
 def time():
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d")
@@ -43,19 +45,29 @@ def menu():   #Collecting data
                 pass
             else:
                 continue
-
-
         value = get_expenses(category)
+      
         data[category]=value
-        
+       
     return data
-   
+
 
 
 final_data = menu()
 finance = Finance(final_data)
+
 finance.total_expense()
 finance.highest_expense()
+
+categories = list(final_data.keys())
+amount = list(final_data.values())
+print(categories)
+print(type(categories))
+print(amount)
+print(type(amount))
+
+plt.pie(amount,labels=categories,autopct="%1.2f")
+plt.show()
 
 with open("Finance_Tracker.txt","a") as f:
     f.write(str(time()))

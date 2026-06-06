@@ -1,0 +1,24 @@
+2026-06-06
+This month expence:
+{'foos': 14.0, 'cwef': 3141.0}
+The total expence is: 3155.0
+
+You spent most on cwef with amount 3141.0 
+2026-06-06
+This month expence:
+{'food': 1241.0, 'travel': 1321.0}
+The total expence is: 2562.0
+
+You spent most on travel with amount 1321.0 
+2026-06-06
+This month expence:
+{'foos': 2321.0, 'travel': 231.0}
+The total expence is: 2552.0
+
+You spent most on foos with amount 2321.0 
+2026-06-06
+This month expence:
+{'food': 24241.0, 'travel': 341.0, 'rent': 1351.0}
+The total expence is: 25933.0
+
+You spent most on food with amount 24241.0 
